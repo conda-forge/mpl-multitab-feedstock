@@ -1,13 +1,13 @@
 {% set name = "mpl-multitab" %}
-{% set version = "0.0.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpl-multitab-{{ version }}.tar.gz
-  sha256: 2728e853c957811a7efcb56dcc1ef35e2b6bf10496f53c7d080cfd2de8629ca5
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 308a8ac5f2758a0249cc8300dfa690941ca12e433aacb1884859a70f8d4ba6a6
 
 build:
   noarch: python
