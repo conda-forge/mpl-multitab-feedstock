@@ -1,5 +1,5 @@
 {% set name = "mpl-multitab" %}
-{% set version = "1.0.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 308a8ac5f2758a0249cc8300dfa690941ca12e433aacb1884859a70f8d4ba6a6
+  sha256: 594d5cdca8bd2c6300f5a53f839c2b0358bec01dad82cef7e85b8ae5a8d5a565
 
 build:
   noarch: python

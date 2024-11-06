@@ -1,11 +1,11 @@
-About mpl-multitab
-==================
+About mpl-multitab-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mpl-multitab-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/astromancer/mpl-multitab
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mpl-multitab-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tabbed figure manager for matplotlib using pyQt
 
