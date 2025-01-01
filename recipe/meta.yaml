@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 308a8ac5f2758a0249cc8300dfa690941ca12e433aacb1884859a70f8d4ba6a6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy
     - matplotlib
     - loguru
@@ -34,6 +34,7 @@ test:
     - xvfb-run --auto-servernum python -c "import mpl_multitab"  # [linux]
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/astromancer/mpl-multitab
